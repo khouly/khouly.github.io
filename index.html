@@ -37,24 +37,43 @@
         <li><a class="btn white-text waves-effect waves-light deep-purple" href="files/mostafa-elkhouly-resume.pdf" target="_blank">Download my résumé</a></li>
       </ul>
     </header>
-    <main><div class="section no-pad-bot blue" id="index-banner">
-  <div id="about-me-section" class="">
+    <main>
+      <div id="about-me-section" class="no-pad-bot">
     <div class='row center'>
-      <div class='col s12 m8 push-m4'>
-        <div class="message-wrapper">
-          <p class="enjoy-css">I'm an organized, detail-oriented and creative individual with a diverse experience in managing teams and product
-          life cycles from different perspectives. Starting from an app developer, UI developer, training team leader in
-          Vodafone International Services, CTO of Coterique and CEO of Unplugged delivering 126 projects to 70 clients ranging
-          from startups to international companies like Vodafone, AstraZeneca, Lexus and Toyota.</p>
+        <div class="switch" id="switch-time">
+            <label>
+            <input type="checkbox" id="time-toggle">
+            <span class="lever"></span>
+            </label>
         </div>
-      </div>
-      <div class='col s12 m4 pull-m8'>
-        <object type="image/svg+xml" data="images/mostafaelkhouly-avatar.svg">Your browser does not support SVG</object>
-      </div>
+        <div id="sun"></div>
+        <div id="moon"></div>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="clouds"></div>
+        <object id="buildings" type="image/svg+xml" data="">Your browser does not support SVG</object>
+        <object id="me" type="image/svg+xml" data="images/mostafaelkhouly-avatar.svg">Your browser does not support SVG</object>
+        <div class="conversation">
+            <div class="bubble bubble1">
+                <image src="images/bubble.svg"></image>
+                <p>Hi there! I'm Mostafa ElKhouly</p>
+            </div>
+            <div class="bubble bubble2">
+                <image src="images/bubble.svg"></image>
+                <p>This is my profile website</p>
+            </div>
+            <div class="bubble bubble3">
+                <image src="images/bubble.svg"></image>
+                <p>Scroll down to know more about me</p>
+            </div>
+            <!--<div class="talk-bubble tri-right round btm-left">
+                <div class="talktext">
+                    <p>And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
+                </div>
+            </div>-->
+        </div>
     </div>
-  </div>
-</div>
-<div id="areas-of-expertise-section" class="container section">
+</div><div id="areas-of-expertise-section" class="container section">
   <h2 class="header center">Areas of expertise</h2>
   <div class='row'>
     <div class='col s12 center'>
@@ -108,8 +127,7 @@
         </div>
     </div>
   </div>
-</div>
-<div id="work-experience-section" class="container section">
+</div><div id="work-experience-section" class="container section">
   <h2 class="header center">Work experience</h2>
   <div class='row'>
     <ul class="collapsible" data-collapsible="accordion expandable">
@@ -176,8 +194,7 @@
       </li>
     </ul>
   </div>
-</div>
-<div id="volunteer-experience-section" class="container section">
+</div><div id="volunteer-experience-section" class="container section">
   <h2 class="header center">Volunteer experience</h2>
   <div class="row">
     <h3 class="center s-margin">CISV International</h3>
@@ -187,7 +204,7 @@
       <li class="tab col s6"><a href="#cisv-experience">Experience</a></li>
     </ul>
     <div id="cisv-activities">
-      <div class="col s12 l6 no-pad">
+      <div class="col s12 l6">
         <ul class="collection">
           <li class="collection-item avatar">
             <img src="images/flags/egypt.svg" alt="" class="circle">
@@ -217,7 +234,7 @@
         </ul>
       </div>
       <div class="col s12 l6">
-        <ul class="collection">
+        <ul class="collection second-col">
           <li class="collection-item avatar">
             <img src="images/flags/portugal.svg" alt="" class="circle">
             <span class="title">Train The Trainers workshop</span>
@@ -265,8 +282,7 @@
       </ul>
     </div>
   </div>
-</div>
-<div id="skills-section" class="container section">
+</div><div id="skills-section" class="container section">
   <h2 class="header center">Skills</h2>
   <div class="row">
     <ul class="tabs tabs-fixed-width">
@@ -490,21 +506,23 @@
     </div>
   </div>
 </div>
-<div class="row container">
-  <div id="education-section" class="container center section col s12 l6">
-    <h2 class="header">Education</h2>
-    <h3>The German University in Cairo</h3>
-    <p><b>June 2010</b> | Egypt | <a target="_blank" href="http://guc.edu.eg">http://guc.edu.eg</a></p>
-    <p>Bachelor Degree of Science in Media Engineering and Technology</p>
-    <p><b>Major:</b> Computer Science and Engineering</p>
-    <p><b>GPA:</b> 1.58 (Very Good with Honors)</p>
-  </div>
-  <div id="awards-section" class="container center section col s12 l6">
-    <h2 class="header">Awards</h2>
-    <h3>GUC Stars</h3>
-    <p><b>April 2016</b> | The German University in Cairo</p>
-    <p>Honored for outstanding achievements for my accomplishments since graduation as a successful GUC Entrepreneur. This was
-      the first year for this award and I was selected among 11 other recipients out of over 10,000 alumnus.</p>
+      <div id="education-awards-section" class="container section">
+  <div class="row">
+    <div id="education-section" class="container center col s12 l6">
+      <h2 class="header">Education</h2>
+      <h3>The German University in Cairo</h3>
+      <p><b>June 2010</b> | Egypt | <a target="_blank" href="http://guc.edu.eg">http://guc.edu.eg</a></p>
+      <p>Bachelor Degree of Science in Media Engineering and Technology</p>
+      <p><b>Major:</b> Computer Science and Engineering</p>
+      <p><b>GPA:</b> 1.58 (Very Good with Honors)</p>
+    </div>
+    <div id="awards-section" class="container center col s12 l6">
+      <h2 class="header">Awards</h2>
+      <h3>GUC Stars</h3>
+      <p><b>April 2016</b> | The German University in Cairo</p>
+      <p>Honored for outstanding achievements for my accomplishments since graduation as a successful GUC Entrepreneur. This was
+        the first year for this award and I was selected among 11 other recipients out of over 10,000 alumnus.</p>
+    </div>
   </div>
 </div>
     </main>    <footer class="page-footer">
@@ -518,6 +536,7 @@
             <div class="chip">Sass</div>
             <div class="chip">JavaScript</div>
             <div class="chip">jQuery</div>
+            <div class="chip">Velocity.js</div>
             <div class="chip">Materalize</div>
             <div class="chip">NPM</div>
             <div class="chip">Grunt</div>
@@ -531,16 +550,16 @@
           </div>
           <div class="col s12 m6 offset-m3 l4">
             <h3 class="white-text">Download my résumé</h3>
-            <a href="files/mostafa-elkhouly-resume.pdf" target="_blank" class="btn waves-effect waves-light deep-purple"><i class="material-icons">file_download</i></a>
+            <a href="files/mostafa-elkhouly-resume.pdf" target="_blank" class="btn btn-large waves-effect waves-light deep-purple"><i class="material-icons">file_download</i></a>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container my-accounts">
           <span>© 2017 Mostafa ElKhouly, All rights reserved.</span>
-          <a href="https://www.facebook.com/khouly.mostafa" target="_blank" class="right"><i class="fa fa-facebook fa-2x"></i></a>
-          <a href="https://www.instagram.com/mostafaelkhouly" target="_blank" class="right"><i class="fa fa-instagram fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/mostafaelkhouly" target="_blank" class="right"><i class="fa fa-linkedin fa-2x"></i></a>
+          <a href="https://www.facebook.com/khouly.mostafa" target="_blank" class="right"><i class="fa fa-facebook fa-lg"></i></a>
+          <a href="https://www.instagram.com/mostafaelkhouly" target="_blank" class="right"><i class="fa fa-instagram fa-lg"></i></a>
+          <a href="https://www.linkedin.com/in/mostafaelkhouly" target="_blank" class="right"><i class="fa fa-linkedin fa-lg"></i></a>
         </div>
       </div>
     </footer>
