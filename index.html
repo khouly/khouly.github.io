@@ -17,8 +17,7 @@
     <!-- CSS-->
     <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection">
     <!-- Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500|Short+Stack" rel="stylesheet" type="text/css">
     <script src="https://use.fontawesome.com/32800c45da.js" type="text/javascript"></script>
   </head>
   <body>
@@ -27,7 +26,8 @@
       <ul class="side-nav fixed" id="nav-mobile">
         <li class="logo"><a class="brand-logo" id="logo-container" href="http://mostafaelkhouly.com/">
             <object id="front-page-logo" type="image/svg+xml" data="images/mk-logo.svg">Your browser does not support SVG</object></a></li>
-        <li class="bold"><a class="waves-effect" href="#about-me-section">About me</a></li>
+        <li class="bold"><a class="waves-effect" href="#about-me-section">Meet 
+            <h1 class="my-name">Mostafa ElKhouly</h1></a></li>
         <li><a class="waves-effect" href="#areas-of-expertise-section">Areas of expertise</a></li>
         <li><a class="waves-effect" href="#work-experience-section">Work experience</a></li>
         <li><a class="waves-effect" href="#volunteer-experience-section">Volunteer experience</a></li>
@@ -40,37 +40,36 @@
     <main>
       <div id="about-me-section" class="no-pad-bot">
     <div class='row center'>
-        <div class="switch" id="switch-time">
-            <label>
-            <input type="checkbox" id="time-toggle">
-            <span class="lever"></span>
-            </label>
-        </div>
         <div id="sun"></div>
         <div id="moon"></div>
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="clouds"></div>
-        <object id="buildings" type="image/svg+xml" data="">Your browser does not support SVG</object>
+        <!--<object id="buildings" type="image/svg+xml" data="images/landmarks/EG.svg">Your browser does not support SVG</object>-->
+        <div id="buildings"></div>
         <object id="me" type="image/svg+xml" data="images/mostafaelkhouly-avatar.svg">Your browser does not support SVG</object>
         <div class="conversation">
-            <div class="bubble bubble1">
-                <image src="images/bubble.svg"></image>
-                <p>Hi there! I'm Mostafa ElKhouly</p>
-            </div>
-            <div class="bubble bubble2">
-                <image src="images/bubble.svg"></image>
-                <p>This is my profile website</p>
-            </div>
-            <div class="bubble bubble3">
-                <image src="images/bubble.svg"></image>
-                <p>Scroll down to know more about me</p>
-            </div>
-            <!--<div class="talk-bubble tri-right round btm-left">
+            <div class="talk-bubble tri-right round btm-left bubble1">
                 <div class="talktext">
-                    <p>And now using .round we can smooth the sides down. Also uses .btm-left to show a triangle at the bottom flush to the left.</p>
+                    <p>Hi there! I'm Mostafa ElKhouly</p>
                 </div>
-            </div>-->
+            </div>
+            <div class="talk-bubble tri-right round btm-left bubble2">
+                <div class="talktext">
+                    <p>This is my profile website</p>
+                </div>
+            </div>
+            <div class="talk-bubble tri-right round btm-left bubble3">
+                <div class="talktext">
+                    <p>Scroll down to know more about me</p>
+                </div>
+            </div>
+        </div>
+        <div class="switch" id="switch-time">
+            <label>
+            <input type="checkbox" id="time-toggle">
+            <span class="lever"></span>
+            </label>
         </div>
     </div>
 </div><div id="areas-of-expertise-section" class="container section">
@@ -292,7 +291,7 @@
       <li class="tab"><a href="#languages-skills">Languages</a></li>
     </ul>
     <div id="design-skills" class="col s12">
-      <ul class="collection">
+      <ul class="collection striped">
         <li class="collection-item">
           <div>User Interface
             <span class="secondary-content">
@@ -334,7 +333,7 @@
       </ul>
     </div>
     <div id="development-skills" class="col s12">
-      <ul class="collection">
+      <ul class="collection striped">
         <li class="collection-item">
           <div>HTML
             <span class="secondary-content">
@@ -394,7 +393,7 @@
       </ul>
     </div>
     <div id="tools-skills" class="col s12">
-      <ul class="collection">
+      <ul class="collection striped">
         <li class="collection-item">
           <div>Google Analytics
             <span class="secondary-content">
@@ -445,7 +444,7 @@
       </ul>
     </div>
     <div id="languages-skills" class="col s12">
-      <ul class="collection">
+      <ul class="collection striped">
         <li class="collection-item">
           <div>English (Reading)
             <span class="secondary-content">
