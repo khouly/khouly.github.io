@@ -6,6 +6,7 @@ The website is localized on 2 ways:
 * Based on your IP the top section landscape will change to show some of the landmarks from the country your visiting from ;) (Or the server you are using in case of VPNs)
 
 List of supported countries for the landmarks feature:
+* Brazil
 * Canada
 * Egypt
 * France
