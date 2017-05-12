@@ -14,11 +14,13 @@ List of supported countries for the landmarks feature:
 * Colombia
 * Denmark
 * Egypt
+* Estonia
 * France
 * Germany
 * Greece
 * Ireland
 * Italy
+* Lithuania
 * Mexico
 * Netherlands
 * Norway
