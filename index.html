@@ -70,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <svg>
               <use xlink:href="#icon-menu"></use>
             </svg></i></a></div>
-      <ul class="side-nav fixed" id="nav-mobile">
+      <ul class="side-nav fixed table-of-contents" id="nav-mobile">
         <li class="logo"><a class="brand-logo" id="logo-container" href="http://mostafaelkhouly.com/">
             <object id="front-page-logo" type="image/svg+xml" data="images/mk-logo.svg">Your browser does not support SVG</object></a></li>
         <li><a class="gtm-m gtm-m_me waves-effect" href="#about-me-section">Meet 
@@ -80,7 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a class="gtm-m gtm-m_volunteer waves-effect" href="#volunteer-experience-section">Volunteer Experience</a></li>
         <li><a class="gtm-m gtm-m_skills waves-effect" href="#skills-section">Skills</a></li>
         <li><a class="gtm-m gtm-m_awards waves-effect" href="#awards-section">Awards</a></li>
-        <li><a class="gtm-r gtm-r_menu btn white-text waves-effect waves-light deep-purple" href="files/mostafa-elkhouly-resume.pdf" target="_blank">Download my résumé</a></li>
+        <li><a class="gtm-r gtm-r_menu btn white-text waves-effect waves-light deep-purple" id="menu-download" href="files/mostafa-elkhouly-resume.pdf" target="_blank">Download my résumé</a></li>
       </ul>
     </header>
     <main>
@@ -211,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <path d="M21.313 8h8v8l-3.063-3.063-8.375 8.375-5.313-5.313-8 8-1.875-1.875 9.875-9.875 5.313 5.313 6.5-6.5z"></path>
 </symbol>
 </defs>
-</svg><div id="about-me-section" class="no-pad-bot">
+</svg><div id="about-me-section" class="no-pad-bot scrollspy">
     <div class='row center'>
         <div id="sun"></div>
         <div id="moon"></div>
@@ -234,7 +234,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </label>
         </div>
     </div>
-</div><div id="areas-of-expertise-section" class="container section">
+</div><div id="areas-of-expertise-section" class="container section scrollspy">
   <h2 class="header center">Areas of Expertise</h2>
   <div class='row'>
     <div class='col s12 center'>
@@ -336,7 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
   </div>
-</div><div id="work-experience-section" class="container section">
+</div><div id="work-experience-section" class="container section scrollspy">
   <h2 class="header center">Work Experience</h2>
   <div class='row'>
     <div class="row">
@@ -349,7 +349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="new badge deep-purple lighten-1" data-badge-caption="Egypt"></span>
           </div>
           <div class="card-action center">
-            <!--<a class="gtm-w gtm-w_unplugged_visual" href="#unplugged-visual">Visual data</a>-->
+            <a class="gtm-w gtm-w_unplugged_visual" href="#unplugged-visual">Visual data</a>
             <a class="gtm-w gtm-w_unplugged_text" href="#unplugged-text">Learn more</a>
           </div>
         </div>
@@ -395,16 +395,111 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div id="unplugged-visual" class="modal">
+      <a onclick="$('#unplugged-visual').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
       <div class="modal-content">
-        <a onclick="$('#unplugged-visual').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
-        <div class="container">
-          
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/selffunding.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Established the agency through self-funding</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/team.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Organically grown the team from 2 to 16 members</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/turnover.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Maintained a 12% employee turnover rate</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/projects.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Delivered 126 projects for 70 clients</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/growth.svg"/>
+            </div>
+            <div class="card-content">
+              <p>An average of 90% year over year growth in sales</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/process.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Initiated and enhanced internal processes</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/trainings.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Planned and delivered multiple trainings</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/internships.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Created and managed internship programs</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/deal.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Formed a partnership with the German University in Cairo</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/presenting.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Presented sessions about entrepreneurship and web development</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/elnoorgeh.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Initiated and launched El Noor Geh platform</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/unplugged-visual/foreign.svg"/>
+            </div>
+            <div class="card-content">
+              <p>Maintained recurring revenues in foreign currency</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div id="unplugged-text" class="modal">
+    <div id="unplugged-text" class="modal modal-fixed-footer">
+      <a onclick="$('#unplugged-text').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
       <div class="modal-content">
-        <a onclick="$('#unplugged-text').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
         <div class="container">
           <div class="title">Unplugged <a target="_blank" class="gtm-l gtm-l_unplugged_link" href="http://unpluggedweb.com"><i class="material-icons"><svg><use xlink:href="#icon-link"></use></svg></i></a></div>
           <p><b>Board Member</b> | January 2017 - Present date</p>
@@ -431,15 +526,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Initiated and launched <a target="_blank" class="gtm-l gtm-l_elnoorgeh_link" href="http://elnoorgeh.com/">El Noor Geh</a> platform to support Egyptian
               consumers in reducing and regulating their electricity consumption.</li>
           </ul>
-          <div class="experience-navigation">
-            <a onclick="$('#unplugged-text').modal('close');$('#coterique-text').modal('open');" class="next gtm-nav_we">Next</a>
-          </div>
         </div>
       </div>
+      <div class="experience-navigation modal-footer">
+        <a onclick="$('#unplugged-text').modal('close');$('#coterique-text').modal('open');" class="next gtm-nav_we">Next</a>
+      </div>
     </div>
-    <div id="coterique-text" class="modal">
+    <div id="coterique-text" class="modal modal-fixed-footer">
+      <a onclick="$('#coterique-text').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
       <div class="modal-content">
-        <a onclick="$('#coterique-text').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
         <div class="container">
           <div class="title">Coterique <a target="_blank" class="gtm-l gtm-l_coterique_link" href="https://coterique.com"><i class="material-icons"><svg><use xlink:href="#icon-link"></use></svg></i></a></div>
           <p><b>Co-Founder &amp; CTO</b> | January 2013 - July 2013</p>
@@ -447,16 +542,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Generated the business and operational models that got the company incubated and seed funded by <a target="_blank" class="gtm-l gtm-l_flat6labs_link" href="http://www.flat6labs.com/">Flat6Labs</a> Cairo.</li>
             <li>Developed the back-end and front-end of an e-commerce platform that was integrated with our partner stores.</li>
           </ul>
-          <div class="experience-navigation">
-            <a onclick="$('#coterique-text').modal('close');$('#unplugged-text').modal('open');" class="previous gtm-nav_we">Previous</a>
-            <a onclick="$('#coterique-text').modal('close');$('#appcasters-text').modal('open');" class="next gtm-nav_we">Next</a>
-          </div>
         </div>
       </div>
+      <div class="experience-navigation modal-footer">
+        <a onclick="$('#coterique-text').modal('close');$('#unplugged-text').modal('open');" class="previous gtm-nav_we">Previous</a>
+        <a onclick="$('#coterique-text').modal('close');$('#appcasters-text').modal('open');" class="next gtm-nav_we">Next</a>
+      </div>
     </div>
-    <div id="appcasters-text" class="modal">
+    <div id="appcasters-text" class="modal modal-fixed-footer">
+      <a onclick="$('#appcasters-text').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
       <div class="modal-content">
-        <a onclick="$('#appcasters-text').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
         <div class="container">
           <div class="title">Appcasters</div>
           <p><b>Part-time Android Software Developer</b> | September 2011 - February 2013</p>
@@ -465,16 +560,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Produced financial reports on the profitability of the ads vs the in-app purchases.</li>
             <li>Implemented a hybrid system that integrates both revenue models with variable geographical location based pricing.</li>
           </ul>
-          <div class="experience-navigation">
-            <a onclick="$('#appcasters-text').modal('close');$('#coterique-text').modal('open');" class="previous gtm-nav_we">Previous</a>
-            <a onclick="$('#appcasters-text').modal('close');$('#vodafone-text').modal('open');" class="next gtm-nav_we">Next</a>
-          </div>
         </div>
       </div>
+      <div class="experience-navigation modal-footer">
+        <a onclick="$('#appcasters-text').modal('close');$('#coterique-text').modal('open');" class="previous gtm-nav_we">Previous</a>
+        <a onclick="$('#appcasters-text').modal('close');$('#vodafone-text').modal('open');" class="next gtm-nav_we">Next</a>
+      </div>
     </div>
-    <div id="vodafone-text" class="modal">
+    <div id="vodafone-text" class="modal modal-fixed-footer">
+      <a onclick="$('#vodafone-text').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
       <div class="modal-content">
-        <a onclick="$('#vodafone-text').modal('close');" class="btn-floating red close-modal"><i class="material-icons"><svg><use xlink:href="#icon-close"></use></svg></i></a>
         <div class="container">
           <div class="title">Vodafone <a target="_blank" class="gtm-l gtm-l_vodafone_link" href="https://vodafone.com.eg"><i class="material-icons"><svg><use xlink:href="#icon-link"></use></svg></i></a></div>
           <p><b>Global Frontline Support Engineer</b> | January 2011 - May 2012</p>
@@ -483,15 +578,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Designed and delivered trainings of all the employees within Infrastructure Service Desk.</li>
             <li>Synchronized the internal training processes with the requirements from Vodafone Group in Germany.</li>
           </ul>
-          <div class="experience-navigation">
-            <a onclick="$('#vodafone-text').modal('close');$('#appcasters-text').modal('open');" class="previous gtm-nav_we">Previous</a>
-            <a onclick="$('#vodafone-text').modal('close');" class="next gtm-nav_we">Close</a>
-          </div>
         </div>
+      </div>
+      <div class="experience-navigation modal-footer">
+        <a onclick="$('#vodafone-text').modal('close');$('#appcasters-text').modal('open');" class="previous gtm-nav_we">Previous</a>
+        <a onclick="$('#vodafone-text').modal('close');" class="next gtm-nav_we">Close</a>
       </div>
     </div>
   </div>
-</div><div id="volunteer-experience-section" class="container section">
+</div><div id="volunteer-experience-section" class="container section scrollspy">
   <h2 class="header center">Volunteer Experience</h2>
   <div class="row">
     <h3 class="center s-margin">CISV International</h3>
@@ -600,7 +695,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
     </div>
   </div>
-</div><div id="skills-section" class="container section">
+</div><div id="skills-section" class="container section scrollspy">
   <h2 class="header center">Skills</h2>
   <div class="row">
     <ul class="tabs tabs-fixed-width">
@@ -851,7 +946,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>-->
-<div id="awards-section" class="container section">
+<div id="awards-section" class="container section scrollspy">
   <div class="row center">
     <div class="col s12 m8 offset-m2 l6 offset-l3">
       <h2 class="header">Awards</h2>

@@ -13,19 +13,27 @@ List of supported countries for the landmarks feature:
 * Canada
 * Colombia
 * Denmark
+* Ecuador
 * Egypt
 * Estonia
+* Finland
 * France
 * Germany
 * Greece
 * Ireland
 * Italy
+* Jordon
+* Kuwait
+* Latvia
+* Lebanon
 * Lithuania
 * Mexico
 * Netherlands
 * Norway
 * Portugal
+* Qatar
 * Russia
+* Saudi Arabia
 * Spain
 * Sweden
 * Switzerland
